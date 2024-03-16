@@ -1,0 +1,68 @@
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+
+header .header {
+  height: 4.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: #fff;
+}
+
+header .img-prev {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+header p {
+  transform: translateX(-3.5%);
+}
+
+/* MAIN */
+main {
+  margin-top: 4.5rem;
+}
+
+main .info-user_list {
+  padding: 0 1rem;
+}
+
+main .info-user_list .info-user_item {
+  height: 5.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+main .info-user_list .info-user_item .info-user_item-left {
+  gap: 5px;
+}
+
+main .info-user_list .info-user_item .info-user_item-left img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+main .info-user_list .info-user_item .info-user_item-right {
+  gap: 1rem;
+}
+
+main .info-user_list .info-user_item .info-user_item-right span {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+main .info-user_list .info-user_item .info-user_item-right .avatar-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 2rem;
+}
+
+main .info-user_list .info-user_item .info-user_item-right .next-icon {
+  width: 0.6rem;
+  height: 1.3rem;
+}

@@ -1,0 +1,122 @@
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+
+header .header {
+  height: 4.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #926dff;
+  color: #fff;
+}
+
+header .img-prev {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-left: 0.5rem;
+}
+
+header p {
+  transform: translateX(-3.5%);
+}
+
+/* MAIN */
+main {
+  margin-top: 4.5rem;
+}
+
+main .vip_banner {
+  background: -webkit-linear-gradient(left, #27a6fa, #8e71f5);
+  width: 100%;
+  height: 12rem;
+}
+
+main .vip_banner .vip_card {
+  width: 92%;
+  height: 11rem;
+  background: url("../images/vip_bg.png") no-repeat;
+  background-size: 100% 100%;
+  margin-left: 4%;
+  margin-top: 1rem;
+  float: left;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  color: #fff;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+main .vip_banner .vip_card .avatar-img {
+  width: 6rem;
+  height: 6rem;
+}
+
+main .vip_banner .vip_card .level {
+  font-size: 2rem;
+}
+
+main .vip_banner .vip_card .amount {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+main .vip_banner .vip_card .vip-card-text {
+  background: #cfa55d;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1.5rem 0 0 1.5rem;
+  color: #997030;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+main .vip_option li {
+  width: 33.333%;
+}
+
+main .vip_option li img {
+  width: 6rem;
+  height: 6rem;
+}
+
+main .vip_option li p {
+  font-size: 1.4rem;
+}
+
+main .vip_content {
+  margin-top: 4rem;
+  row-gap: 4rem;
+}
+
+main .vip_content .vip_content-item {
+  width: 50%;
+}
+
+main .vip_content .vip_content-item .title {
+  font-size: 1.5rem;
+}
+
+main .vip_content .vip_content-item .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #228aff;
+  margin-top: 0.5rem;
+}
+
+main .vip_content .vip_content-item .vip_content-detail {
+  font-size: 1.2rem;
+}
+
+main .vip_content .vip_content-item .title-child {
+  font-size: 1.2rem;
+  color: #999;
+}

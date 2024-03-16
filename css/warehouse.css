@@ -1,0 +1,106 @@
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(to top, #fcfdfeff, #ecc800ff) !important;
+}
+
+.background .background-child {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../images/ddb4.b6d5e63.png");
+  background-size: 100%;
+}
+
+.header {
+  color: #fff;
+  padding: 2rem 0.5em;
+}
+
+.header .price {
+  font-size: 1.4rem;
+}
+
+.list-level .list-level-item {
+  width: 25%;
+  padding: 1rem 0;
+  border-bottom: 3px solid #f2f2f2;
+  cursor: pointer;
+}
+
+.list-level .list-level-item.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.warehouse-list .warehouse-item-wrap {
+  padding: 1rem 0;
+  border-bottom: 4px solid #f2f2f2;
+}
+
+.warehouse-list .warehouse-item {
+  background: url("../images/bg-warehouse.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.warehouse-list .warehouse-item .mark {
+  width: 6.5rem;
+  height: 6.5rem;
+  right: 0.5rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-tabs {
+  font-size: 1.1rem;
+  color: #a9a8a8;
+  margin-top: 0.6rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-products {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-products .info-product {
+  padding: 1rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-products .info-product .desc {
+  font-size: 1.3rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-products .info-product .price {
+  font-size: 1.38rem;
+}
+
+.warehouse-list .warehouse-item .warehouse-products .img-product {
+  width: 9rem;
+  height: 9rem;
+}
+
+.warehouse-list .warehouse-item .price-box {
+  padding-top: 1em;
+  font-size: 1.3rem;
+}
+
+.warehouse-list .warehouse-item .send-btn {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0.5rem auto;
+  background: #0262b0;
+  color: #fff;
+}
+
+.txt1 {
+  color: #ff9a2c;
+  font-size: 2rem;
+}

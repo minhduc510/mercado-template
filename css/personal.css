@@ -1,0 +1,145 @@
+/* HEADER */
+#header {
+  background: url("../images/my-bj.png") no-repeat;
+  background-size: 100%;
+  height: 345px;
+}
+
+#header .header-option {
+  padding: 4rem 2.5rem 0;
+}
+
+#header .header-option .img-option {
+  width: 2.5rem;
+}
+
+#header .info {
+  gap: 1rem;
+  margin-top: 1.2rem;
+  padding: 0 2.5rem;
+}
+
+#header .info .avatar {
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#header .info .avatar {
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#header .info .username {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+#header .info .code {
+  color: #ffffff8a;
+  font-size: 1.4rem;
+}
+
+#header .vip {
+  margin-left: 1px;
+  height: 30px;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: -11px;
+  width: 75px;
+  background: url("../images/VIP.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+
+#header .balance {
+  width: 38rem;
+  height: 13.5rem;
+  background: #ffdebb;
+  background-size: 100% 100%;
+  margin: 6.8rem auto auto;
+  padding: 1.2rem 1.5rem;
+  position: relative;
+  border-radius: 20px;
+  border: #d1a46d 2px solid;
+}
+
+#header .balance .text-money {
+  color: #daae69;
+  font-size: 1.6rem;
+}
+
+#header .balance .price {
+  color: #daae69;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+#header .balance .container-btn-balance {
+  gap: 5px;
+}
+
+#header .balance .container-btn-balance .btn-balance {
+  background-color: rgba(179, 113, 42, 0.7);
+  color: #fff;
+  padding: 0.3rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+}
+
+#header .balance .logo {
+  width: 8.5rem;
+  height: 8.5rem;
+  background: url("../images/logo.png") no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  #header .border-balance {
+    width: 100%;
+    height: 4rem;
+    background-image: url("../images/border-balance.png");
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* BODY */
+#body ul li {
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  padding: 2.3rem 0;
+  width: 33.3333%;
+}
+
+#body ul li img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#body ul li img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#body .btn-logout {
+  width: 70%;
+  font-size: 2.3rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5rem;
+  background: linear-gradient(to right, #16b4ff, #4073ff);
+  margin: 2.5rem auto;
+  display: block;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Address</title>
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/warehouse-address.css">
+</head>
+
+<body>
+    <header class="d-flex ai-center">
+        <div class="header ctnr d-flex ai-center">
+            <img src="./images/arrow-prev.png" alt="" class="img-prev">
+            <p class="flex-1 p-0 ta-center">Chỉnh sửa địa chỉ phân phối</p>
+        </div>
+    </header>
+    <main>
+        <div class="ctnr">
+            <form action="">
+                <div class="info-box personal">
+                    <div class="title d-flex ai-center">Thông tin cá nhân</div>
+                    <ul class="form-gr content">
+                        <li class="d-flex">
+                            <p class="p-0">Họ và tên</p>
+                            <input type="text" value="NGUYỄN THÙY DƯƠNG" readonly>
+                        </li>
+                        <li class="d-flex">
+                            <p class="p-0">Số điện thoại</p>
+                            <input type="text" value="1234567890" readonly>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box address">
+                    <div class="title d-flex ai-center">Thông tin địa chỉ</div>
+                    <ul class="form-gr content">
+                        <li class="d-flex">
+                            <p class="p-0">Quốc gia</p>
+                            <input type="text" value="Japan" readonly>
+                        </li>
+                        <li class="d-flex">
+                            <p class="p-0">Địa chỉ</p>
+                            <input type="text" value="Osaka" readonly>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <div class="title"></div>
+                    <ul class="form-gr content">
+                        <li class="d-flex js-between ai-center">
+                            <p class="p-0 w-auto">Đặt làm địa chỉ mặc định</p>
+                            <div class="checkbox-wrapper-6">
+                                <input class="tgl tgl-light" id="cb1-6" type="checkbox" />
+                                <label class="tgl-btn" for="cb1-6">
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" class="btn-confirm">Xác nhận</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

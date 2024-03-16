@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change in numbers</title>
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/change-numbers.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+
+<body>
+    <header class="d-flex ai-center">
+        <div class="header ctnr d-flex ai-center">
+            <img src="./images/arrow-prev.png" alt="" class="img-prev">
+            <p class="flex-1 p-0 ta-center">Biến động số dư</p>
+        </div>
+    </header>
+    <main>
+        <div class="ctnr">
+            <div class="filter d-flex js-between">
+                <div class="filter-range-container d-flex js-center ai-center">
+                    <div class="filter-range">
+                        <input type="text" class="input-range" readonly id="date_from">
+                    </div>
+                    <span>đến</span>
+                    <div class="filter-range">
+                        <input type="text" class="input-range" readonly id="date_to">
+                    </div>
+                </div>
+                <button class="btn-search d-flex js-center ai-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                    <span>Tìm</span>
+                </button>
+            </div>
+            <ul class="list-level d-flex">
+                <li id="all" class="list-level-item ta-center active">Tất cả</li>
+                <li id="withdraw" class="list-level-item ta-center">Rút tiền</li>
+                <li id="recharge" class="list-level-item ta-center">Nạp tiền</li>
+            </ul>
+            <div id="all_list" class="group-info">
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-blue">Đặt hàng</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-red">Lợi nhuận</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-blue">Đặt hàng</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-red">Lợi nhuận</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+            </div>
+            <div id="withdraw_list" class="group-info d-none">
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-purple">Rút tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-purple">Rút tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-purple">Rút tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+            </div>
+            <div id="recharge_list" class="group-info d-none">
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-red">Nạp tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-red">Nạp tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between ai-center">
+                    <div class="info-data">
+                        <p class="p-0">2024-03-03 17:00:09</p>
+                        <p class="status p-0 text-red">Nạp tiền</p>
+                    </div>
+                    <div class="info-money ta-right">
+                        220.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/library.js"></script>
+    <script src="./js/change-numbers.js"></script>
+</body>
+
+</html>

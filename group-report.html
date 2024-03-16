@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group report</title>
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/group-report.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+
+<body>
+    <header class="d-flex ai-center">
+        <div class="header ctnr d-flex ai-center">
+            <img src="./images/arrow-prev.png" alt="" class="img-prev">
+            <p class="flex-1 p-0 ta-center">NHÓM</p>
+        </div>
+    </header>
+    <main>
+        <div class="ctnr">
+            <div class="filter d-flex js-between fw-wrap">
+                <div class="filter-range-container d-flex js-center ai-center">
+                    <div class="filter-range">
+                        <input type="text" class="input-range" readonly id="date_from">
+                    </div>
+                    <span>đến</span>
+                    <div class="filter-range">
+                        <input type="text" class="input-range" readonly id="date_to">
+                    </div>
+                </div>
+                <button class="btn-search d-flex js-center ai-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                    <span>Tìm</span>
+                </button>
+            </div>
+            <ul class="list-level d-flex">
+                <li id="level1" class="list-level-item ta-center active">Cấp 1</li>
+                <li id="level2" class="list-level-item ta-center">Cấp 2</li>
+                <li id="level3" class="list-level-item ta-center">Cấp 3</li>
+            </ul>
+            <div id="level1_list" class="group-info">
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="level2_list" class="group-info d-none">
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="level3_list" class="group-info d-none">
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group-info-item d-flex js-between">
+                    <div class="info-data d-flex">
+                        <img src="./images/5.8235203.png" alt="" class="avatar-img">
+                        <div class="info-user">
+                            <p class="p-0">
+                                <span>Tên:</span>
+                                <span>Trongphuc12</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Nạp:</span>
+                                <span>0</span>
+                            </p>
+                            <p class="p-0 text-blue">
+                                <span>Rút:</span>
+                                <span>0</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-money ta-right">
+                        <p class="p-0 text-blue">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </p>
+                        <p class="p-0 text-green">
+                            <span>Mời:</span>
+                            <span>0</span>
+                        </p>
+                        <p class="time p-0">
+                            <span>Thời gian tham gia:</span>
+                            <span>2024-03-15</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/library.js"></script>
+    <script src="./js/group-report.js"></script>
+</body>
+
+</html>

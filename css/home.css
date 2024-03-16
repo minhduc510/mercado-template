@@ -1,0 +1,301 @@
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+/* HEADER */
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  z-index: 1;
+}
+
+header .header {
+  display: flex;
+  align-items: center;
+  background-color: #e9d84e;
+}
+
+header span {
+  color: #0c0c0c;
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+main {
+  margin-top: 35px;
+  margin-bottom: 7rem;
+}
+
+#banner {
+  padding-top: 2rem;
+  background: linear-gradient(#dec702, #ecc800 50%, #edebeb 70%, #fff);
+}
+
+#banner .banner-slide {
+  height: 15rem;
+}
+
+#banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#banner .banner-ad {
+  background: url("https://mercado.shopping/web/img/jiaonang.png") no-repeat;
+  background-size: 100%;
+  height: 10rem;
+  text-align: center;
+  margin: 1.5rem 0.3rem 0;
+  color: white;
+}
+
+#options {
+  margin-top: 4rem;
+}
+
+#options .list-options {
+  margin: 0 2rem;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#options .list-options .option-item {
+  background: url("../images/download.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: auto;
+}
+
+#options .list-options li .option-icon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: rorateData 2s infinite;
+}
+
+#options .list-options li .option-text {
+  transform: translateY(50%);
+  font-weight: 600;
+}
+
+#member {
+  margin: 0 2rem;
+}
+
+#member .member-title {
+  gap: 3px;
+}
+
+#member .member-title img {
+  width: 1.8rem;
+}
+
+#member .member-title p {
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+#member {
+  margin-top: 2rem;
+}
+
+#member .member-list-container {
+  margin-top: 2rem;
+}
+
+#member .member-list-container .member-list {
+  gap: 1rem;
+  overflow-x: scroll;
+}
+
+#member .member-list-container .member-list .member-item {
+  background-color: #fafafa;
+  flex: 1;
+  min-width: 14rem;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_top
+  .member-item_top-right {
+  width: 38px;
+  height: 15px;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_top
+  .member-item_top-left {
+  width: 30px;
+}
+
+#member .member-list-container .member-list .member-item .member-item_content {
+  width: 10rem;
+  height: 17rem;
+  background: url("../images/b1.6e95813.png") no-repeat;
+  background-size: contain;
+  margin-top: 1rem;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_content
+  .img-unlock {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.8rem;
+  right: 0.4rem;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_content
+  .member-item_content-text {
+  padding: 8rem 1rem 0;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_content
+  .member-item_content-text
+  p {
+  color: #fff;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+#group {
+  margin: 0 2rem;
+}
+
+#group .group-title {
+  gap: 3px;
+}
+
+#group .group-title img {
+  width: 1.8rem;
+}
+
+#group .group-title p {
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+#group {
+  margin-top: 2rem;
+}
+
+#group .group-list-container {
+  margin-top: 2rem;
+}
+
+#group .group-list-container .group-list {
+  gap: 1rem;
+}
+
+#group .group-list-container .group-list li {
+}
+
+#group .group-list-container .group-list li .group-item {
+  background-color: #fafafa;
+  padding: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#group .group-list-container .group-list li .group-item img {
+  width: 2.6rem;
+}
+
+#update {
+  margin: 2rem;
+}
+
+#update .title {
+  font-size: 1.8rem;
+}
+
+#update .scroolbox {
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 20rem;
+  overflow: hidden;
+}
+
+#update .scroolbox li {
+  padding: 1.2rem 0.5rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+#update .scroolbox .avatar-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#update .scroolbox .phone {
+  padding: 0;
+}
+
+#update .scroolbox .status-text {
+  padding: 0 0 0 3rem;
+  font-size: 1.35rem;
+}
+
+#update .scroolbox .price-text {
+  padding: 0;
+  font-size: 1.3rem;
+  color: red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+}
+
+.footer {
+  background: #fff url("../images/bg-footer.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.footer .menu .menu-item {
+  width: 20%;
+}
+
+.footer .menu .menu-item p {
+  line-height: 1;
+}
+
+.footer .menu .menu-item .img-icon {
+  width: 2.3rem;
+}
+
+.footer .menu .menu-item .img-icon.logo {
+  width: 7rem;
+}

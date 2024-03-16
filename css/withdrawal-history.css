@@ -1,0 +1,75 @@
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+
+header .header {
+  height: 4.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: #fff;
+}
+
+header .img-prev {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+header p {
+  transform: translateX(-3.5%);
+}
+
+/* MAIN */
+main {
+  margin-top: 4.5rem;
+}
+
+main .history-list .history-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0 1rem 1rem;
+  position: relative;
+}
+
+main .history-list .history-item .time {
+  color: #ccc;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+main .history-list .history-item .number {
+  font-size: 1.3rem;
+}
+
+main .history-list .history-item .status {
+  font-size: 1.3rem;
+}
+
+main .history-list .history-item .status .status-type {
+  color: rgb(42, 40, 195);
+}
+
+main .pagination {
+  gap: 3px;
+  justify-content: end;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+main .pagination .pagination-box {
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+
+main .pagination .pagination-box.active {
+  background-color: #ccc;
+}

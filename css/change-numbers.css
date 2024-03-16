@@ -1,0 +1,122 @@
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+
+header .header {
+  height: 4.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: #fff;
+}
+
+header .img-prev {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+header p {
+  transform: translateX(-3.5%);
+}
+
+/* MAIN */
+main {
+  margin-top: 4.5rem;
+}
+
+main .filter {
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .filter .filter-range-container {
+  gap: 1rem;
+}
+
+main .filter .filter-range-container .filter-range {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  max-width: 12rem;
+  cursor: pointer;
+}
+
+main .filter .filter-range input {
+  background-color: transparent;
+}
+
+main .filter .btn-search {
+  background: #ff7614;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 3rem;
+  font-weight: 400;
+  width: 6.5rem;
+  min-width: 2rem;
+  padding: 0;
+}
+
+main .filter .btn-search svg {
+  width: 1.5rem;
+}
+
+main .filter .btn-search svg path {
+  fill: #fff;
+}
+
+main .list-level {
+  gap: 2px;
+}
+
+main .list-level .list-level-item {
+  width: 33.333%;
+  padding: 1rem 0;
+  border-bottom: 3px solid #f2f2f2;
+  cursor: pointer;
+}
+
+main .list-level .list-level-item.active {
+  color: #be1204;
+  border-color: #be1204;
+}
+
+main .group-info .group-info-item {
+  padding: 1rem 0.2rem;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+main .group-info .group-info-item .info-data {
+  font-size: 1.3rem;
+}
+
+main .group-info .group-info-item .info-data .status {
+  font-size: 1.5rem;
+}
+
+main .group-info .group-info-item .info-money {
+  background-color: rgb(255, 0, 0);
+  height: fit-content;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.text-blue {
+  color: rgb(42, 40, 195);
+}
+
+.text-red {
+  color: rgb(255, 0, 0);
+}
+
+.text-purple {
+  color: rgb(216, 20, 201);
+}
