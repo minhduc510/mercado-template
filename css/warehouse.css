@@ -1,3 +1,7 @@
+main {
+  margin-bottom: 7rem;
+}
+
 .background {
   position: absolute;
   z-index: -1;
@@ -103,4 +107,38 @@
 .txt1 {
   color: #ff9a2c;
   font-size: 2rem;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+}
+
+.footer {
+  background: #fff url("../images/bg-footer.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.footer .menu .menu-item {
+  width: 20%;
+}
+
+.footer .menu .menu-item p {
+  line-height: 1;
+}
+
+.footer .menu .menu-item .img-icon {
+  width: 2.3rem;
+}
+
+.footer .menu .menu-item .img-icon.logo {
+  width: 7rem;
+}
+
+.footer .menu .menu-item.active {
+  color: #018cfa;
 }

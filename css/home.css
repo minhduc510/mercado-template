@@ -29,7 +29,7 @@ header span {
 /* MAIN */
 main {
   margin-top: 35px;
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 
 #banner {
@@ -75,10 +75,25 @@ main {
 }
 
 #options .list-options li .option-icon {
-  width: 40px;
-  height: 40px;
+  height: auto;
   margin: auto;
   animation: rorateData 2s infinite;
+}
+
+#options .list-options li .option-icon.icon-present {
+  width: 40px;
+}
+
+#options .list-options li .option-icon.icon-recharge {
+  width: 45px;
+}
+
+#options .list-options li .option-icon.icon-withdraw {
+  width: 40px;
+}
+
+#options .list-options li .option-icon.icon-distribution {
+  width: 30px;
 }
 
 #options .list-options li .option-text {
@@ -144,8 +159,8 @@ main {
 }
 
 #member .member-list-container .member-list .member-item .member-item_content {
-  width: 10rem;
-  height: 17rem;
+  width: 12rem;
+  height: 19rem;
   background: url("../images/b1.6e95813.png") no-repeat;
   background-size: contain;
   margin-top: 1rem;
@@ -161,7 +176,7 @@ main {
   height: 2rem;
   position: absolute;
   top: 1.8rem;
-  right: 0.4rem;
+  right: 1.3rem;
 }
 
 #member
@@ -171,6 +186,29 @@ main {
   .member-item_content
   .member-item_content-text {
   padding: 8rem 1rem 0;
+  color: #fff;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_content
+  .member-item_content-text
+  .text-member {
+  width: 80px;
+  margin-top: 0.3rem;
+}
+
+#member
+  .member-list-container
+  .member-list
+  .member-item
+  .member-item_content
+  .member-item_content-text
+  .text-lock {
+  padding-top: 2rem;
+  font-size: 1.1rem;
 }
 
 #member
@@ -182,7 +220,7 @@ main {
   p {
   color: #fff;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #group {
@@ -219,9 +257,9 @@ main {
 
 #group .group-list-container .group-list li .group-item {
   background-color: #fafafa;
-  padding: 1.2rem;
   border-radius: 5px;
   text-align: center;
+  max-width: 100px;
 }
 
 #group .group-list-container .group-list li .group-item img {
@@ -234,6 +272,7 @@ main {
 
 #update .title {
   font-size: 1.8rem;
+  padding: 0;
 }
 
 #update .scroolbox {
@@ -241,6 +280,7 @@ main {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 20rem;
   overflow: hidden;
+  margin-top: 1rem;
 }
 
 #update .scroolbox li {
@@ -298,4 +338,8 @@ footer {
 
 .footer .menu .menu-item .img-icon.logo {
   width: 7rem;
+}
+
+.footer .menu .menu-item.active {
+  color: #018cfa;
 }
