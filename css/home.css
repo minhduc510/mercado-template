@@ -343,3 +343,39 @@ footer {
 .footer .menu .menu-item.active {
   color: #018cfa;
 }
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #0c0c0c4e;
+  z-index: 1;
+}
+
+.popup {
+  position: relative;
+  z-index: 2;
+  max-width: 350px;
+  height: 300px;
+  margin: auto;
+  top: 20%;
+}
+
+.popup .popup-icon {
+  max-width: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.popup .popup-image {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3c5eff),
+    color-stop(60%, #fff)
+  );
+}

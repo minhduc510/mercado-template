@@ -20,3 +20,13 @@ setInterval(() => {
     listScroolbox[0].style.paddingTop = '0'
     listScroolbox[0].style.paddingBottom = '0'
 }, 3000)
+
+const overlay = document.querySelector('.overlay')
+const iconDeletePopup = document.querySelector('.popup-icon')
+
+function hiddenPopup() {
+    overlay.style.display = 'none'
+}
+
+overlay.onclick = hiddenPopup
+iconDeletePopup.onclick = hiddenPopup
