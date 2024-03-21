@@ -16,3 +16,38 @@
     opacity: 0;
   }
 }
+
+@keyframes handPoint {
+  0% {
+    right: -0.266667rem;
+    top: 1.5rem;
+  }
+  10% {
+    right: 0;
+    top: 1rem;
+    transform: rotate(0deg);
+  }
+  20% {
+    right: 0;
+    top: 1rem;
+    transform: rotate(-20deg);
+  }
+  30% {
+    right: 0;
+    top: 1rem;
+    transform: rotate(0deg);
+  }
+  40% {
+    right: 0;
+    top: 1rem;
+    transform: rotate(-20deg);
+  }
+  80% {
+    right: 0;
+    top: 1rem;
+  }
+  100% {
+    right: -0.266667rem;
+    top: 1.5rem;
+  }
+}

@@ -1,0 +1,200 @@
+body {
+  background-color: #f2f2f2;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+
+header .header {
+  height: 4.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background: linear-gradient(to right, #5cc8fc, #4073ff);
+}
+
+header .img-prev {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.5rem;
+}
+
+header p {
+  transform: translateX(-3.5%);
+  color: #fff;
+}
+
+/* MAIN */
+main {
+  margin-top: 4.5rem;
+  margin-bottom: 7rem;
+  padding: 2rem 1rem;
+}
+
+main .distribution-system-content {
+  padding: 1rem;
+}
+
+main .distribution-system-content .banner {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+main .distribution-system-content .banner p {
+  padding: 0.5rem 0;
+  color: #969696;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+main .distribution-system-content .post-btn {
+  background-image: url("../images/tt1.png");
+  height: 50px;
+  width: 200px;
+  background-size: 100% 100%;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+main .distribution-system-content .post-btn-wrap {
+  display: flex;
+  position: relative;
+  margin: 3rem 0;
+}
+
+main .distribution-system-content .post-btn-wrap .image-hand {
+  position: absolute;
+  animation: handPoint 2s infinite;
+  width: 60px;
+  margin-right: 3rem;
+  z-index: -1;
+}
+
+main .distribution-system-content .post-total {
+  border-radius: 5px;
+}
+
+main .distribution-system-content .post-total .post-total_title {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #0051ab;
+}
+
+main .distribution-system-content .post-total .post-total_list {
+  border-radius: 8px;
+  border: 2px solid #0051ab;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main
+  .distribution-system-content
+  .post-total
+  .post-total_list
+  .post-total_list-item {
+  width: 50%;
+  padding: 1rem;
+}
+
+main
+  .distribution-system-content
+  .post-total
+  .post-total_list
+  .post-total_list-item
+  .post-total_list-item-content {
+  background-color: #dcebfa;
+  padding: 1rem;
+  text-align: center;
+  min-height: 100px;
+}
+
+main
+  .distribution-system-content
+  .post-total
+  .post-total_list
+  .post-total_list-item
+  .post-total_list-item-content
+  p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0051ab;
+}
+
+main
+  .distribution-system-content
+  .post-total
+  .post-total_list
+  .post-total_list-item
+  .post-total_list-item-content
+  span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #21b0ff;
+}
+
+main .distribution-system-content .post-desc {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+main .distribution-system-content .post-desc .post-desc_btn {
+  width: 100px;
+  background: linear-gradient(209deg, #ffcc2c, #ff9a2c);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+main .distribution-system-content .post-desc .post-desc_content {
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+}
+
+.footer {
+  background: #fff url("../images/bg-footer.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.footer .menu .menu-item {
+  width: 20%;
+}
+
+.footer .menu .menu-item p {
+  line-height: 1;
+}
+
+.footer .menu .menu-item .img-icon {
+  width: 2.3rem;
+}
+
+.footer .menu .menu-item .img-icon.logo {
+  width: 7rem;
+}
+
+.footer .menu .menu-item.active {
+  color: #018cfa;
+}
