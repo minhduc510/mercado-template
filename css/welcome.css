@@ -1,0 +1,87 @@
+.welcome {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome .welcome-background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/welcome.jpeg");
+  @media only screen and (max-width: 600px) {
+    background-size: 200% 100%;
+  }
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome .welcome-overlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  opacity: 0.8;
+}
+
+.welcome .welcome-content {
+  position: relative;
+  @media only screen and (min-width: 600px) {
+    width: 600px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 10rem;
+  }
+}
+
+.welcome .welcome-content .welcome-content_logo {
+  width: 200px;
+  margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    width: 130px;
+  }
+}
+
+.welcome .welcome-content .welcome-content_direction {
+  display: flex;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.welcome .welcome-content .welcome-content_direction button {
+  background-color: #ffe700;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  min-width: 250px;
+  margin: 0 auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.welcome .welcome-content .welcome-content_desc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  @media only screen and (max-width: 600px) {
+    gap: 0.5rem;
+  }
+}
+
+.welcome .welcome-content .welcome-content_desc .welcome-content_desc-item {
+  color: #fff;
+  border: 1px dashed #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  @media only screen and (max-width: 600px) {
+    padding: 0.5rem;
+  }
+}
